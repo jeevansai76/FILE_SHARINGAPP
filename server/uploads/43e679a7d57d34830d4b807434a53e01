@@ -1,0 +1,730 @@
+{
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "id": "amVET0GgpgFZ"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Collecting decision-tree-id3\n",
+            "  Downloading decision-tree-id3-0.1.2.tar.gz (12 kB)\n",
+            "  Downloading decision-tree-id3-0.1.1.tar.gz (12 kB)\n",
+            "  Downloading decision-tree-id3-0.1.tar.gz (11 kB)\n",
+            "  Downloading decision-tree-id3-0.0.2.tar.gz (11 kB)\n"
+          ]
+        },
+        {
+          "name": "stderr",
+          "output_type": "stream",
+          "text": [
+            "    ERROR: Command errored out with exit status 1:\n",
+            "     command: 'C:\\Users\\91917\\AppData\\Local\\Programs\\Python\\Python310\\python.exe' -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '\"'\"'C:\\\\Users\\\\91917\\\\AppData\\\\Local\\\\Temp\\\\pip-install-ozl5ssjm\\\\decision-tree-id3_226321a29095407a87d52fd774e07599\\\\setup.py'\"'\"'; __file__='\"'\"'C:\\\\Users\\\\91917\\\\AppData\\\\Local\\\\Temp\\\\pip-install-ozl5ssjm\\\\decision-tree-id3_226321a29095407a87d52fd774e07599\\\\setup.py'\"'\"';f = getattr(tokenize, '\"'\"'open'\"'\"', open)(__file__) if os.path.exists(__file__) else io.StringIO('\"'\"'from setuptools import setup; setup()'\"'\"');code = f.read().replace('\"'\"'\\r\\n'\"'\"', '\"'\"'\\n'\"'\"');f.close();exec(compile(code, __file__, '\"'\"'exec'\"'\"'))' egg_info --egg-base 'C:\\Users\\91917\\AppData\\Local\\Temp\\pip-pip-egg-info-04_a6ezs'\n",
+            "         cwd: C:\\Users\\91917\\AppData\\Local\\Temp\\pip-install-ozl5ssjm\\decision-tree-id3_226321a29095407a87d52fd774e07599\\\n",
+            "    Complete output (1 lines):\n",
+            "    scipy is required during installation\n",
+            "    ----------------------------------------\n",
+            "WARNING: Discarding https://files.pythonhosted.org/packages/53/60/9b51eb3b5096afa1fce2718f56c99f8e183162dae114c56592112ab54329/decision-tree-id3-0.1.2.tar.gz#sha256=78bf799b6a53c0db1f82d121574ca5067d29ee5c3bc1b98834c4df421f3bdcfc (from https://pypi.org/simple/decision-tree-id3/). Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.\n",
+            "    ERROR: Command errored out with exit status 1:\n",
+            "     command: 'C:\\Users\\91917\\AppData\\Local\\Programs\\Python\\Python310\\python.exe' -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '\"'\"'C:\\\\Users\\\\91917\\\\AppData\\\\Local\\\\Temp\\\\pip-install-ozl5ssjm\\\\decision-tree-id3_a84c3bbf66484008a8c690ff69a16a82\\\\setup.py'\"'\"'; __file__='\"'\"'C:\\\\Users\\\\91917\\\\AppData\\\\Local\\\\Temp\\\\pip-install-ozl5ssjm\\\\decision-tree-id3_a84c3bbf66484008a8c690ff69a16a82\\\\setup.py'\"'\"';f = getattr(tokenize, '\"'\"'open'\"'\"', open)(__file__) if os.path.exists(__file__) else io.StringIO('\"'\"'from setuptools import setup; setup()'\"'\"');code = f.read().replace('\"'\"'\\r\\n'\"'\"', '\"'\"'\\n'\"'\"');f.close();exec(compile(code, __file__, '\"'\"'exec'\"'\"'))' egg_info --egg-base 'C:\\Users\\91917\\AppData\\Local\\Temp\\pip-pip-egg-info-41mszo5z'\n",
+            "         cwd: C:\\Users\\91917\\AppData\\Local\\Temp\\pip-install-ozl5ssjm\\decision-tree-id3_a84c3bbf66484008a8c690ff69a16a82\\\n",
+            "    Complete output (1 lines):\n",
+            "    scipy is required during installation\n",
+            "    ----------------------------------------\n",
+            "WARNING: Discarding https://files.pythonhosted.org/packages/b2/6d/3b6ec31926f51a824590bacdff88f76abbdb83878faa35ff088bb2da0c6c/decision-tree-id3-0.1.1.tar.gz#sha256=9e909fba42dfd9506f94648b51bc6b01f2bde398be97c630c494677956a63fab (from https://pypi.org/simple/decision-tree-id3/). Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.\n",
+            "    ERROR: Command errored out with exit status 1:\n",
+            "     command: 'C:\\Users\\91917\\AppData\\Local\\Programs\\Python\\Python310\\python.exe' -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '\"'\"'C:\\\\Users\\\\91917\\\\AppData\\\\Local\\\\Temp\\\\pip-install-ozl5ssjm\\\\decision-tree-id3_04a4c6c49de743bd9da0ec1ce070be7d\\\\setup.py'\"'\"'; __file__='\"'\"'C:\\\\Users\\\\91917\\\\AppData\\\\Local\\\\Temp\\\\pip-install-ozl5ssjm\\\\decision-tree-id3_04a4c6c49de743bd9da0ec1ce070be7d\\\\setup.py'\"'\"';f = getattr(tokenize, '\"'\"'open'\"'\"', open)(__file__) if os.path.exists(__file__) else io.StringIO('\"'\"'from setuptools import setup; setup()'\"'\"');code = f.read().replace('\"'\"'\\r\\n'\"'\"', '\"'\"'\\n'\"'\"');f.close();exec(compile(code, __file__, '\"'\"'exec'\"'\"'))' egg_info --egg-base 'C:\\Users\\91917\\AppData\\Local\\Temp\\pip-pip-egg-info-c1l4zxh1'\n",
+            "         cwd: C:\\Users\\91917\\AppData\\Local\\Temp\\pip-install-ozl5ssjm\\decision-tree-id3_04a4c6c49de743bd9da0ec1ce070be7d\\\n",
+            "    Complete output (1 lines):\n",
+            "    scipy is required during installation\n",
+            "    ----------------------------------------\n",
+            "WARNING: Discarding https://files.pythonhosted.org/packages/7f/39/8e7820cdab9a2f5996b5384c6b0a061e8f30758e2eeef74c0b6869ae21d9/decision-tree-id3-0.1.tar.gz#sha256=60ff835c595cdb444cdd4f99f0f4bbd671fd1236259aceda13786f926c52c263 (from https://pypi.org/simple/decision-tree-id3/). Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.\n",
+            "    ERROR: Command errored out with exit status 1:\n",
+            "     command: 'C:\\Users\\91917\\AppData\\Local\\Programs\\Python\\Python310\\python.exe' -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '\"'\"'C:\\\\Users\\\\91917\\\\AppData\\\\Local\\\\Temp\\\\pip-install-ozl5ssjm\\\\decision-tree-id3_21a5ddac680d4d108c8624f7396a7d4b\\\\setup.py'\"'\"'; __file__='\"'\"'C:\\\\Users\\\\91917\\\\AppData\\\\Local\\\\Temp\\\\pip-install-ozl5ssjm\\\\decision-tree-id3_21a5ddac680d4d108c8624f7396a7d4b\\\\setup.py'\"'\"';f = getattr(tokenize, '\"'\"'open'\"'\"', open)(__file__) if os.path.exists(__file__) else io.StringIO('\"'\"'from setuptools import setup; setup()'\"'\"');code = f.read().replace('\"'\"'\\r\\n'\"'\"', '\"'\"'\\n'\"'\"');f.close();exec(compile(code, __file__, '\"'\"'exec'\"'\"'))' egg_info --egg-base 'C:\\Users\\91917\\AppData\\Local\\Temp\\pip-pip-egg-info-0qlirjzm'\n",
+            "         cwd: C:\\Users\\91917\\AppData\\Local\\Temp\\pip-install-ozl5ssjm\\decision-tree-id3_21a5ddac680d4d108c8624f7396a7d4b\\\n",
+            "    Complete output (1 lines):\n",
+            "    scipy is required during installation\n",
+            "    ----------------------------------------\n",
+            "WARNING: Discarding https://files.pythonhosted.org/packages/0b/1c/0570edb4fea63308ef84dde6953490b5b63ccfe7ac5ed82437f96735acdc/decision-tree-id3-0.0.2.tar.gz#sha256=903a77c50f4a15aa3ea6a0f55f588484decf89a211bccbbfac8c69ef648993f4 (from https://pypi.org/simple/decision-tree-id3/). Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.\n",
+            "ERROR: Could not find a version that satisfies the requirement decision-tree-id3 (from versions: 0.0.2, 0.1, 0.1.1, 0.1.2)\n",
+            "ERROR: No matching distribution found for decision-tree-id3\n",
+            "WARNING: You are using pip version 21.2.4; however, version 23.1.2 is available.\n",
+            "You should consider upgrading via the 'C:\\Users\\91917\\AppData\\Local\\Programs\\Python\\Python310\\python.exe -m pip install --upgrade pip' command.\n"
+          ]
+        },
+        {
+          "ename": "ModuleNotFoundError",
+          "evalue": "No module named 'pandas'",
+          "output_type": "error",
+          "traceback": [
+            "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[1;31mModuleNotFoundError\u001b[0m                       Traceback (most recent call last)",
+            "\u001b[1;32mc:\\Users\\91917\\Downloads\\ML Lab\\ML Lab\\Week-4(Exp-2)\\ID3Algorithm.ipynb Cell 1\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      <a href='vscode-notebook-cell:/c%3A/Users/91917/Downloads/ML%20Lab/ML%20Lab/Week-4%28Exp-2%29/ID3Algorithm.ipynb#W0sZmlsZQ%3D%3D?line=0'>1</a>\u001b[0m \u001b[39m#Importing lib for data pre-processing and algorithm building \u001b[39;00m\n\u001b[0;32m      <a href='vscode-notebook-cell:/c%3A/Users/91917/Downloads/ML%20Lab/ML%20Lab/Week-4%28Exp-2%29/ID3Algorithm.ipynb#W0sZmlsZQ%3D%3D?line=2'>3</a>\u001b[0m get_ipython()\u001b[39m.\u001b[39msystem(\u001b[39m'\u001b[39m\u001b[39mpip install decision-tree-id3\u001b[39m\u001b[39m'\u001b[39m)\n\u001b[1;32m----> <a href='vscode-notebook-cell:/c%3A/Users/91917/Downloads/ML%20Lab/ML%20Lab/Week-4%28Exp-2%29/ID3Algorithm.ipynb#W0sZmlsZQ%3D%3D?line=4'>5</a>\u001b[0m \u001b[39mimport\u001b[39;00m \u001b[39mpandas\u001b[39;00m \u001b[39mas\u001b[39;00m \u001b[39mpd\u001b[39;00m  \u001b[39m# for reading data set\u001b[39;00m\n\u001b[0;32m      <a href='vscode-notebook-cell:/c%3A/Users/91917/Downloads/ML%20Lab/ML%20Lab/Week-4%28Exp-2%29/ID3Algorithm.ipynb#W0sZmlsZQ%3D%3D?line=6'>7</a>\u001b[0m \u001b[39mimport\u001b[39;00m \u001b[39msix\u001b[39;00m\n\u001b[0;32m      <a href='vscode-notebook-cell:/c%3A/Users/91917/Downloads/ML%20Lab/ML%20Lab/Week-4%28Exp-2%29/ID3Algorithm.ipynb#W0sZmlsZQ%3D%3D?line=7'>8</a>\u001b[0m \u001b[39mimport\u001b[39;00m \u001b[39msys\u001b[39;00m\n",
+            "\u001b[1;31mModuleNotFoundError\u001b[0m: No module named 'pandas'"
+          ]
+        }
+      ],
+      "source": [
+        "#Importing lib for data pre-processing and algorithm building \n",
+        "\n",
+        "!pip install decision-tree-id3\n",
+        "\n",
+        "import pandas as pd  # for reading data set\n",
+        "\n",
+        "import six\n",
+        "import sys\n",
+        "sys.modules['sklearn.externals.six'] = six\n",
+        "\n",
+        "from id3 import Id3Estimator"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 32,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 206
+        },
+        "id": "9UFjwnx7dwTk",
+        "outputId": "37470d20-9daa-43a9-eaea-164fc5c62e14"
+      },
+      "outputs": [
+        {
+          "data": {
+            "text/html": [
+              "\n",
+              "  <div id=\"df-b269999a-d737-4650-835e-c5b4f8c1cc9d\">\n",
+              "    <div class=\"colab-df-container\">\n",
+              "      <div>\n",
+              "<style scoped>\n",
+              "    .dataframe tbody tr th:only-of-type {\n",
+              "        vertical-align: middle;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe tbody tr th {\n",
+              "        vertical-align: top;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe thead th {\n",
+              "        text-align: right;\n",
+              "    }\n",
+              "</style>\n",
+              "<table border=\"1\" class=\"dataframe\">\n",
+              "  <thead>\n",
+              "    <tr style=\"text-align: right;\">\n",
+              "      <th></th>\n",
+              "      <th>Outlook</th>\n",
+              "      <th>Temperature</th>\n",
+              "      <th>Humidity</th>\n",
+              "      <th>Wind</th>\n",
+              "      <th>Play Tennis</th>\n",
+              "    </tr>\n",
+              "  </thead>\n",
+              "  <tbody>\n",
+              "    <tr>\n",
+              "      <th>0</th>\n",
+              "      <td>Sunny</td>\n",
+              "      <td>Hot</td>\n",
+              "      <td>High</td>\n",
+              "      <td>Weak</td>\n",
+              "      <td>No</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>1</th>\n",
+              "      <td>Sunny</td>\n",
+              "      <td>Hot</td>\n",
+              "      <td>High</td>\n",
+              "      <td>Strong</td>\n",
+              "      <td>No</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>2</th>\n",
+              "      <td>Overcast</td>\n",
+              "      <td>Hot</td>\n",
+              "      <td>High</td>\n",
+              "      <td>Weak</td>\n",
+              "      <td>Yes</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>3</th>\n",
+              "      <td>Rain</td>\n",
+              "      <td>Mild</td>\n",
+              "      <td>High</td>\n",
+              "      <td>Weak</td>\n",
+              "      <td>Yes</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>4</th>\n",
+              "      <td>Rain</td>\n",
+              "      <td>Cool</td>\n",
+              "      <td>Normal</td>\n",
+              "      <td>Weak</td>\n",
+              "      <td>Yes</td>\n",
+              "    </tr>\n",
+              "  </tbody>\n",
+              "</table>\n",
+              "</div>\n",
+              "      <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-b269999a-d737-4650-835e-c5b4f8c1cc9d')\"\n",
+              "              title=\"Convert this dataframe to an interactive table.\"\n",
+              "              style=\"display:none;\">\n",
+              "        \n",
+              "  <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\"viewBox=\"0 0 24 24\"\n",
+              "       width=\"24px\">\n",
+              "    <path d=\"M0 0h24v24H0V0z\" fill=\"none\"/>\n",
+              "    <path d=\"M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z\"/><path d=\"M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z\"/>\n",
+              "  </svg>\n",
+              "      </button>\n",
+              "      \n",
+              "  <style>\n",
+              "    .colab-df-container {\n",
+              "      display:flex;\n",
+              "      flex-wrap:wrap;\n",
+              "      gap: 12px;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-convert {\n",
+              "      background-color: #E8F0FE;\n",
+              "      border: none;\n",
+              "      border-radius: 50%;\n",
+              "      cursor: pointer;\n",
+              "      display: none;\n",
+              "      fill: #1967D2;\n",
+              "      height: 32px;\n",
+              "      padding: 0 0 0 0;\n",
+              "      width: 32px;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-convert:hover {\n",
+              "      background-color: #E2EBFA;\n",
+              "      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);\n",
+              "      fill: #174EA6;\n",
+              "    }\n",
+              "\n",
+              "    [theme=dark] .colab-df-convert {\n",
+              "      background-color: #3B4455;\n",
+              "      fill: #D2E3FC;\n",
+              "    }\n",
+              "\n",
+              "    [theme=dark] .colab-df-convert:hover {\n",
+              "      background-color: #434B5C;\n",
+              "      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);\n",
+              "      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));\n",
+              "      fill: #FFFFFF;\n",
+              "    }\n",
+              "  </style>\n",
+              "\n",
+              "      <script>\n",
+              "        const buttonEl =\n",
+              "          document.querySelector('#df-b269999a-d737-4650-835e-c5b4f8c1cc9d button.colab-df-convert');\n",
+              "        buttonEl.style.display =\n",
+              "          google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
+              "\n",
+              "        async function convertToInteractive(key) {\n",
+              "          const element = document.querySelector('#df-b269999a-d737-4650-835e-c5b4f8c1cc9d');\n",
+              "          const dataTable =\n",
+              "            await google.colab.kernel.invokeFunction('convertToInteractive',\n",
+              "                                                     [key], {});\n",
+              "          if (!dataTable) return;\n",
+              "\n",
+              "          const docLinkHtml = 'Like what you see? Visit the ' +\n",
+              "            '<a target=\"_blank\" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'\n",
+              "            + ' to learn more about interactive tables.';\n",
+              "          element.innerHTML = '';\n",
+              "          dataTable['output_type'] = 'display_data';\n",
+              "          await google.colab.output.renderOutput(dataTable, element);\n",
+              "          const docLink = document.createElement('div');\n",
+              "          docLink.innerHTML = docLinkHtml;\n",
+              "          element.appendChild(docLink);\n",
+              "        }\n",
+              "      </script>\n",
+              "    </div>\n",
+              "  </div>\n",
+              "  "
+            ],
+            "text/plain": [
+              "    Outlook Temperature Humidity    Wind Play Tennis\n",
+              "0     Sunny         Hot     High    Weak          No\n",
+              "1     Sunny         Hot     High  Strong          No\n",
+              "2  Overcast         Hot     High    Weak         Yes\n",
+              "3      Rain        Mild     High    Weak         Yes\n",
+              "4      Rain        Cool   Normal    Weak         Yes"
+            ]
+          },
+          "execution_count": 32,
+          "metadata": {},
+          "output_type": "execute_result"
+        }
+      ],
+      "source": [
+        "#Reading tennis data set\n",
+        "\n",
+        "tennis_data = pd.read_csv('PlayTennis.csv')\n",
+        "\n",
+        "#showing first 5 records\n",
+        "\n",
+        "tennis_data.head(5)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 34,
+      "metadata": {
+        "id": "MdrCtJ54nJ0I"
+      },
+      "outputs": [],
+      "source": [
+        "#converting data to numerics \n",
+        "# we have diffrent approches to convert to numeric values labelencodeer is one of the most used technique \n",
+        "from sklearn.preprocessing import LabelEncoder\n",
+        "Le = LabelEncoder()\n",
+        "\n",
+        "# converting each column \n",
+        "tennis_data['Outlook'] = Le.fit_transform(tennis_data['Outlook'])\n",
+        "tennis_data['Temperature'] = Le.fit_transform(tennis_data['Temperature'])\n",
+        "tennis_data['Humidity'] = Le.fit_transform(tennis_data['Humidity'])\n",
+        "tennis_data['Wind'] = Le.fit_transform(tennis_data['Wind'])\n",
+        "tennis_data['Play Tennis'] = Le.fit_transform(tennis_data['Play Tennis'])"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 36,
+      "metadata": {
+        "id": "WyeJAKNZnmGA"
+      },
+      "outputs": [],
+      "source": [
+        "#seprating target and features \n",
+        "\n",
+        "y = tennis_data['Play Tennis']\n",
+        "X = tennis_data.drop(['Play Tennis'],axis=1)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 20,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 488
+        },
+        "id": "fOV7tYo6o3dv",
+        "outputId": "1c1000bd-1316-4c9d-990a-61d8ce7d57f6"
+      },
+      "outputs": [
+        {
+          "data": {
+            "text/html": [
+              "\n",
+              "  <div id=\"df-0ac59989-7cbf-45c5-918d-e89f825145d8\">\n",
+              "    <div class=\"colab-df-container\">\n",
+              "      <div>\n",
+              "<style scoped>\n",
+              "    .dataframe tbody tr th:only-of-type {\n",
+              "        vertical-align: middle;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe tbody tr th {\n",
+              "        vertical-align: top;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe thead th {\n",
+              "        text-align: right;\n",
+              "    }\n",
+              "</style>\n",
+              "<table border=\"1\" class=\"dataframe\">\n",
+              "  <thead>\n",
+              "    <tr style=\"text-align: right;\">\n",
+              "      <th></th>\n",
+              "      <th>Outlook</th>\n",
+              "      <th>Temperature</th>\n",
+              "      <th>Humidity</th>\n",
+              "      <th>Wind</th>\n",
+              "    </tr>\n",
+              "  </thead>\n",
+              "  <tbody>\n",
+              "    <tr>\n",
+              "      <th>0</th>\n",
+              "      <td>2</td>\n",
+              "      <td>1</td>\n",
+              "      <td>0</td>\n",
+              "      <td>1</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>1</th>\n",
+              "      <td>2</td>\n",
+              "      <td>1</td>\n",
+              "      <td>0</td>\n",
+              "      <td>0</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>2</th>\n",
+              "      <td>0</td>\n",
+              "      <td>1</td>\n",
+              "      <td>0</td>\n",
+              "      <td>1</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>3</th>\n",
+              "      <td>1</td>\n",
+              "      <td>2</td>\n",
+              "      <td>0</td>\n",
+              "      <td>1</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>4</th>\n",
+              "      <td>1</td>\n",
+              "      <td>0</td>\n",
+              "      <td>1</td>\n",
+              "      <td>1</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>5</th>\n",
+              "      <td>1</td>\n",
+              "      <td>0</td>\n",
+              "      <td>1</td>\n",
+              "      <td>0</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>6</th>\n",
+              "      <td>0</td>\n",
+              "      <td>0</td>\n",
+              "      <td>1</td>\n",
+              "      <td>0</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>7</th>\n",
+              "      <td>2</td>\n",
+              "      <td>2</td>\n",
+              "      <td>0</td>\n",
+              "      <td>1</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>8</th>\n",
+              "      <td>2</td>\n",
+              "      <td>0</td>\n",
+              "      <td>1</td>\n",
+              "      <td>1</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>9</th>\n",
+              "      <td>1</td>\n",
+              "      <td>2</td>\n",
+              "      <td>1</td>\n",
+              "      <td>1</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>10</th>\n",
+              "      <td>2</td>\n",
+              "      <td>2</td>\n",
+              "      <td>1</td>\n",
+              "      <td>0</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>11</th>\n",
+              "      <td>0</td>\n",
+              "      <td>2</td>\n",
+              "      <td>0</td>\n",
+              "      <td>0</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>12</th>\n",
+              "      <td>0</td>\n",
+              "      <td>1</td>\n",
+              "      <td>1</td>\n",
+              "      <td>1</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>13</th>\n",
+              "      <td>1</td>\n",
+              "      <td>2</td>\n",
+              "      <td>0</td>\n",
+              "      <td>0</td>\n",
+              "    </tr>\n",
+              "  </tbody>\n",
+              "</table>\n",
+              "</div>\n",
+              "      <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-0ac59989-7cbf-45c5-918d-e89f825145d8')\"\n",
+              "              title=\"Convert this dataframe to an interactive table.\"\n",
+              "              style=\"display:none;\">\n",
+              "        \n",
+              "  <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\"viewBox=\"0 0 24 24\"\n",
+              "       width=\"24px\">\n",
+              "    <path d=\"M0 0h24v24H0V0z\" fill=\"none\"/>\n",
+              "    <path d=\"M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z\"/><path d=\"M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z\"/>\n",
+              "  </svg>\n",
+              "      </button>\n",
+              "      \n",
+              "  <style>\n",
+              "    .colab-df-container {\n",
+              "      display:flex;\n",
+              "      flex-wrap:wrap;\n",
+              "      gap: 12px;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-convert {\n",
+              "      background-color: #E8F0FE;\n",
+              "      border: none;\n",
+              "      border-radius: 50%;\n",
+              "      cursor: pointer;\n",
+              "      display: none;\n",
+              "      fill: #1967D2;\n",
+              "      height: 32px;\n",
+              "      padding: 0 0 0 0;\n",
+              "      width: 32px;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-convert:hover {\n",
+              "      background-color: #E2EBFA;\n",
+              "      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);\n",
+              "      fill: #174EA6;\n",
+              "    }\n",
+              "\n",
+              "    [theme=dark] .colab-df-convert {\n",
+              "      background-color: #3B4455;\n",
+              "      fill: #D2E3FC;\n",
+              "    }\n",
+              "\n",
+              "    [theme=dark] .colab-df-convert:hover {\n",
+              "      background-color: #434B5C;\n",
+              "      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);\n",
+              "      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));\n",
+              "      fill: #FFFFFF;\n",
+              "    }\n",
+              "  </style>\n",
+              "\n",
+              "      <script>\n",
+              "        const buttonEl =\n",
+              "          document.querySelector('#df-0ac59989-7cbf-45c5-918d-e89f825145d8 button.colab-df-convert');\n",
+              "        buttonEl.style.display =\n",
+              "          google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
+              "\n",
+              "        async function convertToInteractive(key) {\n",
+              "          const element = document.querySelector('#df-0ac59989-7cbf-45c5-918d-e89f825145d8');\n",
+              "          const dataTable =\n",
+              "            await google.colab.kernel.invokeFunction('convertToInteractive',\n",
+              "                                                     [key], {});\n",
+              "          if (!dataTable) return;\n",
+              "\n",
+              "          const docLinkHtml = 'Like what you see? Visit the ' +\n",
+              "            '<a target=\"_blank\" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'\n",
+              "            + ' to learn more about interactive tables.';\n",
+              "          element.innerHTML = '';\n",
+              "          dataTable['output_type'] = 'display_data';\n",
+              "          await google.colab.output.renderOutput(dataTable, element);\n",
+              "          const docLink = document.createElement('div');\n",
+              "          docLink.innerHTML = docLinkHtml;\n",
+              "          element.appendChild(docLink);\n",
+              "        }\n",
+              "      </script>\n",
+              "    </div>\n",
+              "  </div>\n",
+              "  "
+            ],
+            "text/plain": [
+              "    Outlook  Temperature  Humidity  Wind\n",
+              "0         2            1         0     1\n",
+              "1         2            1         0     0\n",
+              "2         0            1         0     1\n",
+              "3         1            2         0     1\n",
+              "4         1            0         1     1\n",
+              "5         1            0         1     0\n",
+              "6         0            0         1     0\n",
+              "7         2            2         0     1\n",
+              "8         2            0         1     1\n",
+              "9         1            2         1     1\n",
+              "10        2            2         1     0\n",
+              "11        0            2         0     0\n",
+              "12        0            1         1     1\n",
+              "13        1            2         0     0"
+            ]
+          },
+          "execution_count": 20,
+          "metadata": {},
+          "output_type": "execute_result"
+        }
+      ],
+      "source": [
+        "X"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 21,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OMsUZcxco5IP",
+        "outputId": "e89afb8d-e8a1-4fd7-dcab-7624ed4f8afc"
+      },
+      "outputs": [
+        {
+          "data": {
+            "text/plain": [
+              "0     0\n",
+              "1     0\n",
+              "2     1\n",
+              "3     1\n",
+              "4     1\n",
+              "5     0\n",
+              "6     1\n",
+              "7     0\n",
+              "8     1\n",
+              "9     1\n",
+              "10    1\n",
+              "11    1\n",
+              "12    1\n",
+              "13    0\n",
+              "Name: Play Tennis, dtype: int64"
+            ]
+          },
+          "execution_count": 21,
+          "metadata": {},
+          "output_type": "execute_result"
+        }
+      ],
+      "source": [
+        "y"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 16,
+      "metadata": {
+        "id": "Mb6HRM8An4oA"
+      },
+      "outputs": [],
+      "source": [
+        "# Splitting the dataset into the Training set and Test set\n",
+        "from sklearn.model_selection import train_test_split\n",
+        "X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.8, random_state = 0)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 17,
+      "metadata": {
+        "id": "X26Al-ixnuwr"
+      },
+      "outputs": [],
+      "source": [
+        "# Fitting the model\n",
+        "from sklearn import tree\n",
+        "clf = tree.DecisionTreeClassifier(criterion = 'entropy')\n",
+        "clf = clf.fit(X_train, y_train)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 18,
+      "metadata": {
+        "id": "6TPbJeJfnqF5"
+      },
+      "outputs": [],
+      "source": [
+        "#predections \n",
+        "X_pred = clf.predict(X_test)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 19,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "oZh8Sz01oQJU",
+        "outputId": "48cb07e1-8f2d-4497-b836-492d6235289d"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "              precision    recall  f1-score   support\n",
+            "\n",
+            "           0       0.44      1.00      0.62         4\n",
+            "           1       1.00      0.38      0.55         8\n",
+            "\n",
+            "    accuracy                           0.58        12\n",
+            "   macro avg       0.72      0.69      0.58        12\n",
+            "weighted avg       0.81      0.58      0.57        12\n",
+            "\n"
+          ]
+        }
+      ],
+      "source": [
+        "#classification report to check accuracy,precision,recall etc.\n",
+        "from sklearn.metrics import classification_report\n",
+        "\n",
+        "print(classification_report(y_test, X_pred))"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 38,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "B1mpdC1ypOLC",
+        "outputId": "9fb60755-cc51-4c62-eb40-f0593209b288"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "              precision    recall  f1-score   support\n",
+            "\n",
+            "           0       0.44      1.00      0.62         4\n",
+            "           1       1.00      0.38      0.55         8\n",
+            "\n",
+            "    accuracy                           0.58        12\n",
+            "   macro avg       0.72      0.69      0.58        12\n",
+            "weighted avg       0.81      0.58      0.57        12\n",
+            "\n"
+          ]
+        }
+      ],
+      "source": [
+        "#importing ID3\n",
+        "from id3 import Id3Estimator\n",
+        "estimator = Id3Estimator()\n",
+        "estimator.fit(X_train, y_train)\n",
+        "X_pred = estimator.predict(X_test)\n",
+        "#showing classification report\n",
+        "print(classification_report(y_test, X_pred))"
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    },
+    "language_info": {
+      "codemirror_mode": {
+        "name": "ipython",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.10.2"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
